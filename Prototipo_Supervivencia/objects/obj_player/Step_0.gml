@@ -27,6 +27,9 @@ if (cooldown > 0) {
     cooldown -= 1;
 }
 
+Pistola.x = x + pistola_x-10;
+Pistola.y = y + pistola_y+25;
+
 if (mouse_check_button(mb_left) and cooldown <= 0) {
     instance_create_layer(x, y, "Instances", obj_bullet);
     cooldown = 15; 
