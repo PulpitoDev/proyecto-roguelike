@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Pistola_qla_bkn",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Object7",
+  "eventList":[],
   "managed":true,
-  "name":"Pistola_qla_bkn",
+  "name":"Object7",
   "overriddenProperties":[],
   "parent":{
     "name":"Prototipo_Supervivencia",
@@ -19,25 +17,17 @@
   "physicsGroup":1,
   "physicsKinematic":false,
   "physicsLinearDamping":0.1,
-  "physicsObject":true,
+  "physicsObject":false,
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[
-    {"x":0.0,"y":0.0,},
-    {"x":20.0,"y":0.0,},
-    {"x":20.0,"y":30.0,},
-    {"x":0.0,"y":30.0,},
-  ],
+  "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sprite10",
-    "path":"sprites/Sprite10/Sprite10.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
