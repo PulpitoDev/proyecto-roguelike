@@ -1,23 +1,13 @@
-// ==========================================
-// 0. GESTIÓN DE TIEMPOS DEL DASH
-// ==========================================
 if (dash_cooldown_timer > 0) {
     dash_cooldown_timer -= 1;
 }
 
-// ==========================================
-// 1. MOVIMIENTO Y CONTROLES (NORMAL O DASH)
-// ==========================================
-
-// SI EL DASH ESTÁ ACTIVO: Ignoramos los controles del teclado y nos movemos en línea recta
 if (dash_timer > 0) {
     dash_timer -= 1;
-    
-    // Forzamos la velocidad máxima del dash en la dirección guardada
     hspd = dash_h * dash_speed;
     vspd = dash_v * dash_speed;
 } 
-// SI EL DASH NO ESTÁ ACTIVO: Movimiento normal controlado por el jugador
+
 else {
     var _left = keyboard_check(ord("A"));
     var _right = keyboard_check(ord("D"));
@@ -27,7 +17,7 @@ else {
     var _h = _right - _left;
     var _v = _down - _up;
 
-    // Corregir velocidad en diagonal
+
     if (_h != 0 and _v != 0) {
         _h = _h * 0.707;
         _v = _v * 0.707;
@@ -62,6 +52,9 @@ y = clamp(y + vspd, 0, room_height);
 if (cooldown > 0) {
     cooldown -= 1;
 }
+
+Pistola.x = x + pistola_x -10;
+Pistola.y = y + pistola_y + 60;
 
 if (mouse_check_button(mb_left) and cooldown <= 0) {
     instance_create_layer(x, y, "Instances", obj_bullet);
