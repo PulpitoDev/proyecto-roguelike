@@ -1,41 +1,29 @@
 jefe_aparecio = false;
 
-// 1. SOLO reiniciamos las bajas si estamos empezando el juego desde el Nivel 1
+// Reiniciamos las bajas SOLO si estamos empezando desde el Nivel 1
 if (room == Room1) {
     global.kills = 0; 
 }
 
-// 2. CONFIGURACIÓN DE NIVELES (Dificultad escalable)
+// Configuración adaptativa de 3 niveles
 if (room == Room1) {
-    kills_para_jefe = 10; 
-    limite_pantalla = 20; // Máximo de monstruos a la vez
-    tiempo_spawn = 60;    // Aparecen cada 1 segundo (60 frames)
-    cantidad_spawn = 1;   // Aparece 1 por vez
+    kills_para_jefe = 20;     
+    limite_pantalla = 20; 
+    tiempo_spawn = 60;    
+    cantidad_spawn = 1;   
 } 
 else if (room == Room2) {
-    kills_para_jefe = 25; // 20 del nivel 1 + 40 nuevos
+    kills_para_jefe = 35;     
     limite_pantalla = 40; 
-    tiempo_spawn = 45;    // Más rápido
-    cantidad_spawn = 2;   // Aparecen de a 2
+    tiempo_spawn = 45;    
+    cantidad_spawn = 2;   
 }
 else if (room == Room3) {
-    kills_para_jefe = 45; 
+    kills_para_jefe = 55;     
     limite_pantalla = 70;
-    tiempo_spawn = 30;    // Cada medio segundo
-    cantidad_spawn = 3;   // Aparecen de a 3 (¡enjambre!)
-}
-else if (room == Room4) {
-    kills_para_jefe = 70;
-    limite_pantalla = 100;
-    tiempo_spawn = 20;
-    cantidad_spawn = 4;
-}
-else if (room == Room5) {
-    kills_para_jefe = 100;
-    limite_pantalla = 150; // ¡Pantalla llena!
-    tiempo_spawn = 15;     // Casi ininterrumpido
-    cantidad_spawn = 5;
+    tiempo_spawn = 30;    
+    cantidad_spawn = 3;   
 }
 
-// Iniciar el reloj de aparición
+// Iniciar el reloj
 alarm[0] = tiempo_spawn;
