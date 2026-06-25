@@ -1,5 +1,5 @@
 if (instance_exists(obj_player)) {
-    move_towards_point(obj_player.x, obj_player.y, 2);
+    move_towards_point(obj_player.x, obj_player.y, spd); 
 } else {
     speed = 0;
 }
