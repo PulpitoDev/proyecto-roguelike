@@ -9,4 +9,4 @@ sonido_inicio = audio_play_sound_ext({
 });
 alarm[0] = duracion * game_get_speed(gamespeed_fps);
 
-bucle_fin = 83.9;
+bucle_fin = 83.85;
