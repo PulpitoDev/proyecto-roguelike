@@ -9,8 +9,8 @@
   "name":"obj_boss_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Prototipo_Supervivencia",
-    "path":"Prototipo_Supervivencia.yyp",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -11,7 +11,7 @@ if (global.kills >= kills_para_jefe and jefe_aparecio == false) {
     jefe_aparecio = true; 
     
     // Crear al jefe en el centro de la sala
-    instance_create_layer(room_width / 2, room_height / 2, "Instances", obj_boss);
+    instance_create_layer(obj_player.x + 250, obj_player.y + 250, "Instances", obj_boss);
     
     // Destruir monstruos pequeños restantes
     with (obj_enemy) {

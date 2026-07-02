@@ -1,8 +1,6 @@
 estado = "perseguir";
 murio = false; 
 
-
-
 if (room == Room1) {
     sprite_index = spr_boss1;  
     hp = 20;                   
